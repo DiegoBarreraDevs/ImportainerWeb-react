@@ -1,0 +1,63 @@
+/*===== Wpp Logo =====*/
+.logo-wpp {
+    position: fixed;
+    text-align: center;
+    right: 7%;
+    bottom: 6%;
+    background-color: #25d366;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    z-index: 9;
+    cursor: pointer;
+  }
+  
+  .logo-wpp :hover {
+    cursor: pointer;
+  }
+  
+  .logo-set {
+    position: relative;
+    top: 20%;
+    color: #ffffff;
+    font-size: 45px;
+  }
+
+  @media screen and (max-width: 1940px) {
+
+    .logo-wpp {
+      height: 50px;
+      width: 50px;
+    }
+  
+    .logo-set {
+      font-size: 31px;
+    }
+  }
+
+  @media screen and (max-width: 908px) {
+    .logo-wpp {
+      height: 50px;
+      width: 50px;
+    }
+  
+    .logo-set {
+      font-size: 31px;
+    }
+  
+  }
+
+  @media screen and (max-width: 800px) {
+    /*===== Logo wpp =====*/
+  
+    .logo-wpp {
+      position: fixed;
+      height: 50px;
+      width: 50px;
+    }
+  
+    .logo-set {
+      font-size: 30px;
+    }
+  }
+  

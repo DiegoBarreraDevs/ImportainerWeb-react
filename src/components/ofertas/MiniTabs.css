@@ -1,0 +1,70 @@
+.ContainerMiniTabs{
+    margin-top: 25px;
+}
+
+.ContainerTop {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ContInput {
+    display: flex;
+    align-items: center;    
+}
+
+.InputTitle {
+    margin-left: 10px;
+}
+
+.MiniTabsDetails {
+    background-color: #fff;
+}
+
+.MiniTabsContent {
+    margin-top: 25px;
+}   
+
+.MiniTabsContentTitle {
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: #fff; 
+}
+
+/* ====== Checkboxes ====== */ 
+
+.Check120 {
+    display: none;
+}
+
+.active-check-content{
+    display: block;
+}
+
+.PrincCheckBox {
+    width: 25px;
+    height: 25px;
+    border: 1px solid rgb(255, 0, 0);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.PrincCheckBox input{
+    display: none;
+}
+
+.PrincCheckBox .PrincChecked {
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    border-radius: 50%;
+    background-color: rgba(255, 0, 0, 0.514);
+    display: inline-block;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.PrincCheckBox input:checked + .PrincChecked{
+    opacity: 1;
+}

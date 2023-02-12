@@ -1,0 +1,35 @@
+.TheProyectCard {
+    height: 100%;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+ 
+.TitleProyectCard {
+    position: absolute;
+    cursor: pointer;
+    color: #fff;
+    z-index: 3;
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.TitleProyectCard:hover {
+    color: red;
+}
+
+.ImgProyectCard{
+    height: 100%;
+    width: 130%;
+}
+
+.ProyectCardTransp {
+    height: 100%;
+    width: 100%;
+    background-color: #00000029;
+    z-index: 2;
+    position: absolute;
+}

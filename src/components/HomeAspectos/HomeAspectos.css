@@ -1,0 +1,109 @@
+/*===== Aspectos =====*/
+.aspectos {
+  height: 100%;
+  width: 90%;
+}
+
+.galeria-asp {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-bottom: 0vw;
+}
+
+.card-asp {
+  width: 30%;
+}
+
+.card-asp img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.card-asp-content {
+  text-align: center;
+}
+
+.card-asp-content h4 {
+  padding: 6% 0;
+  font-size: 1.9rem;
+}
+
+.card-asp-content p {
+  text-align: justify;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -25%;
+}
+
+/*===== Responsive =====*/
+
+@media screen and (max-width: 908px) {
+  /*===== Aspectos =====*/
+
+  .aspectos {
+    height: 100%;
+  }
+
+  .card-asp {
+    width: 25%;
+  }
+
+  .card-asp img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .card-asp-content p {
+    text-align: inherit;
+    margin-bottom: -25%;
+  }
+
+  .btn2 {
+    padding: 8px 30px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  /*===== Aspectos =====*/
+
+  .card-asp img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .galeria-asp {
+    display: block;
+  }
+
+  .card-asp {
+    width: 60%;
+    margin: auto;
+  }
+
+  .card-asp img {
+    width: 170px;
+    height: 170px;
+  }
+
+  .card-asp-content h4 {
+    font-size: 1.4rem;
+  }
+
+  .card-asp-content p {
+    text-align: justify;
+    margin-bottom: -10%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /*===== Aspectos =====*/
+  .card-asp-content p {
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,156 @@
+/*===== Logo Importainer =====*/
+.logo-princ {
+  display: flex;
+  height: 70px;
+  width: 130px;
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  margin-top: -10px;
+}
+
+/* .logo {
+  height: 70%;
+  width: 70%;
+} */
+
+/*===== Header =====*/
+
+.header {
+  margin-bottom: 30px;
+}
+
+.menu-btn-s {
+  display: none;
+}
+
+.menu-bar {
+  display: flex;
+  padding-top: 30px;
+}
+
+nav {
+  text-align: right;
+  padding: 0% 5%;
+  display: flex;
+  position: absolute;
+  right: 20px;
+}
+
+nav h1 {
+  color: var(--negro-titulo);
+}
+
+nav a {
+  color: var(--negro-titulo);
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav ul a {
+  margin-left: 10px;
+}
+
+.subrayado {
+  position: relative;
+}
+
+.subrayado:hover {
+  text-decoration: none;
+}
+
+.subrayado::after {
+  content: "";
+
+  width: 50%;
+  position: absolute;
+  left: 25%;
+  bottom: 5px;
+
+  border-width: 0 0 1.8px;
+  border-style: solid;
+  border-color: var(--negro-fondo);
+}
+
+/*===== Responsive =====*/
+
+@media screen and (max-width: 780px) {
+  /*===== Menu Responsive =====*/
+
+
+  .nav-menu {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.61);
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-500%);
+    transition: transform 0.8s ease-in-out;
+  }
+
+  .nav-menu.show {
+    transform: translateX(0%);
+    z-index: 100;
+  }
+
+  .nav-menu ul {
+    display: block;
+    position: absolute;
+  }
+
+  .nav-right {
+    top: 28%;
+  }
+
+  .nav-right a {
+    margin-top: 80px;
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    color: #ffffff;
+  }
+
+  .logo-princ {
+    margin-left: 0px;
+  }
+
+  .menu-btn-s {
+    display: flex;
+    position: absolute;
+    top: 32px;
+    right: 30px;
+    color: var(--negro-titulo);
+    font-weight: 100;
+    z-index: 100;
+  }
+
+  .fa-times {
+    transition: 2500ms;
+    color: #ffffff;
+  }
+  .header {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  /*===== Resp menu =====*/
+
+  .nav-right a {
+    margin-top: 50px;
+    font-size: 20px;
+  }
+  .header {
+    margin-bottom: 70px;
+  }
+}

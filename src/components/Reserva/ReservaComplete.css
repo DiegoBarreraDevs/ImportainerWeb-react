@@ -1,0 +1,9 @@
+.ReservaContainer{
+    width: 80%;
+    margin: auto;
+}
+
+.ReservaTitle {
+    text-align: center;
+    margin-top: 10px;
+}

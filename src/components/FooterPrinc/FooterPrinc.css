@@ -1,0 +1,162 @@
+/*===== Footer =====*/
+
+.footer-p {
+  background-color: var(--negro-fondo);
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+}
+
+.footer-p a {
+  color: var(--blanco-titulo);
+}
+
+.container-footer-p {
+  width: 80%;
+  margin: auto;
+  padding-top: 100px;
+}
+
+.up-fo-p {
+  display: flex;
+  justify-content: space-between;
+}
+
+.right-fo {
+  float: right;
+}
+
+.left-fo {
+  float: left;
+}
+
+.titulo-fo {
+  font-size: 2.8vw;
+  color: var(--rojo-botones);
+}
+
+.text-fo {
+  margin-top: 10px;
+  color: var(--blanco-titulo);
+}
+
+.social-p {
+  margin-top: 20px;
+  margin-left: -10px;
+}
+
+.i-style {
+  font-size: 26px;
+  color: #b9b9b9;
+  padding: 10px;
+}
+
+.i-style i:hover {
+  cursor: pointer;
+  color: var(--rojo-botones);
+  transition: 0.3s;
+}
+
+.map-fo {
+  display: flex;
+}
+
+.title-map-fo {
+  color: var(--blanco-titulo);
+}
+
+.cuad {
+  padding-left: 50px;
+  margin-bottom: 80px;
+}
+
+.links-fo {
+  display: grid;
+  margin-top: 10px;
+}
+
+.links-fo a {
+  margin-top: 20px;
+}
+
+.down-fo-p {
+  height: 60px;
+  width: 100%;
+  background-color: #0f0e0e;
+  display: flex;
+}
+
+.down-fo-p h4 {
+  text-align: center;
+  color: #ffffff8f;
+  position: relative;
+}
+
+.tif-p {
+  position: absolute;
+  margin: auto;
+}
+/*===== Responsive =====*/
+@media screen and (max-width: 800px) {
+  /*===== Footer =====*/
+
+  .social-p {
+    text-align: center;
+  }
+
+  .container-footer-p {
+    display: flex;
+  }
+
+  .up-fo-p {
+    display: block;
+  }
+
+  .left-fo {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .right-fo {
+    width: 100%;
+  }
+
+  .map-fo {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .titulo-fo {
+    font-size: 5vw;
+    text-align: center;
+  }
+
+  .text-fo {
+    font-size: 2.2vw;
+    text-align: center;
+  }
+
+  .i-style {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  /*===== Footer =====*/
+
+  .map-fo {
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+
+  .title-map-fo {
+    text-align: center;
+    margin-right: 50px;
+  }
+
+  .links-fo {
+    text-align: center;
+    margin-right: 50px;
+  }
+}

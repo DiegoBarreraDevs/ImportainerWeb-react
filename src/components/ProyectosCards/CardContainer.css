@@ -1,0 +1,138 @@
+/*===== Proyectos =====*/
+
+.galeria-proyectos {
+  width: 100%;
+}
+
+.titulo-p {
+  text-align: center;
+  margin-bottom: 75px;
+  font-size: 30px;
+  position: relative;
+}
+
+.desc-icons {
+  padding-top: 22px;
+  padding-bottom: 10px;
+}
+
+.fas {
+  margin-right: 5px;
+  margin-left: 10px;
+}
+
+.proy-card {
+  color: var(--blanco-fondo);
+  padding: 10rem 0 0;
+  width: 100%;
+  border-radius: 0.1rem;
+  overflow: hidden;
+  transition: transform 500ms ease;
+  margin-bottom: 10px;
+  margin: auto;
+}
+
+.c1 {
+  /* background-image: url(../../images/120M2.jpg); */
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.proy-card:hover {
+  transform: scale(1.02);
+}
+
+.card-content {
+  --padding: 1.5rem;
+  padding: var(--padding);
+  background: linear-gradient(
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.3) 15%,
+    rgba(0, 0, 0, 1)
+  );
+}
+
+.card-title {
+  position: relative;
+  width: max-content;
+}
+
+.card-title::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  left: calc(var(--padding) * -1);
+  bottom: -5px;
+  width: calc(100% + var(--padding));
+  background: var(--rojo-botones);
+  transform-origin: left;
+  transition: transform 500ms ease;
+}
+
+.proy-card:hover .card-title::after {
+  transform: scaleX(1);
+}
+
+.card-body {
+  color: rgba(255, 255, 255, 0.85);
+  margin-top: 12px;
+}
+
+
+.button {
+  margin-top: 15px;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--blanco-titulo);
+  background-color: var(--rojo-botones);
+  padding: 0.3em 1.2em;
+  border-radius: 0.25em;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--blanco-fondo);
+  color: var(--negro-titulo);
+}
+
+/*===== Responsive =====*/
+
+@media (hover) {
+  .card-content {
+    transform: translateY(60%);
+    transition: transform 500ms ease;
+  }
+
+  .proy-card:hover .card-content {
+    transform: translateY(0);
+    transition-delay: 500ms;
+  }
+
+  .card-content > *:not(.card-title) {
+    opacity: 0;
+    transition: opacity 500ms linear;
+  }
+
+  .proy-card:hover .card-content > *:not(.card-title) {
+    opacity: 1;
+    transition-delay: 800ms;
+  }
+
+  .card-title::after {
+    transform: scaleX(0);
+  }
+}
+
+@media screen and (max-width: 780px) {
+
+  .fondo {
+    background: var(--blanco-fondo);
+  }
+  /*===== extras =====*/
+
+  /* .titulo {
+    font-size: 4vw;
+  } */
+
+}

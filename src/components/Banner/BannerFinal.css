@@ -1,0 +1,99 @@
+.BannerFinal {
+  width: auto;
+  height: 100vh;
+  max-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: nowrap;
+  z-index: 2;
+}
+
+.BannerFilter {
+  overflow: hidden;
+  height: 100%;
+  min-width: 100%;
+  position: absolute;
+  background: -webkit-linear-gradient(
+    to right,
+    hsla(197, 38%, 28%, 0.3),
+    hsla(195, 35%, 19%, 0.3),
+    hsla(198, 44%, 11%, 0.3)
+  );
+  background: linear-gradient(
+    to right,
+    hsla(197, 38%, 28%, 0.3),
+    hsla(195, 35%, 19%, 0.3),
+    hsla(198, 44%, 11%, 0.3)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 33;
+}
+
+.BannerContenido {
+  color: var(--blanco-titulo);
+}
+
+.BannerTitulo {
+  display: flex;
+  justify-content: center;
+  font-size: 3.8vw;
+}
+
+.BannerSubtitulo {
+  margin-top: -5px;
+  display: flex;
+  font-size: 1.7rem;
+  justify-content: center;
+}
+
+.BotonBanner {
+  margin-top: 10px;
+  max-width: 180px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0px;
+  background: #d937378a;
+  font-size: 1rem;
+  border-radius: 5px;
+  color: var(--blanco-titulo);
+}
+
+.ContenedorSlide {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+
+/*===== Responsive ======*/
+@media screen and (max-width: 1250px) {
+  .BannerTitulo {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .BannerFinal {
+      height: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .BannerTitulo {
+    font-size: 1.5rem;
+  }
+  .BannerSubtitulo {
+    margin-top: 1px;
+    font-size: 1.2rem;
+  }
+  .BotonBanner {
+    margin-top: 8px;
+    max-width: 95px;
+    padding: 5px 0px;
+    font-size: 1rem;
+  }
+}

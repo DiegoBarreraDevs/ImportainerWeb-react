@@ -1,0 +1,81 @@
+.CheckBox {
+  display: grid;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.InputLabel {
+  background-color: #fff;
+  height: 85px;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  justify-self: left;
+}
+
+.PrecioCuota {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.CustomCheck {
+  width: 25px;
+  height: 25px;
+  border: 1px solid rgb(255, 0, 0);
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.CustomCheck input {
+  display: none;
+}
+
+.CustomCheck .CheckMark {
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  border-radius: 50%;
+  background-color: rgba(255, 0, 0, 0.514);
+  display: inline-block;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.CustomCheck input:checked + .CheckMark {
+  opacity: 1;
+}
+
+label {
+  cursor: pointer;
+}
+
+.ContainerCheboxes {
+  align-self: center;
+}
+
+.ContCheckBoxBtn {
+  display: flex;
+  justify-content: center;
+}
+
+.CheckBoxBtn {
+  background-color: red;
+  height: 35px;
+  width: 80%;
+  border-radius: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== RESPONSIVE ===== */
+@media screen and (max-width: 800px) {
+  .PrecioCuota {
+    width: 80%;
+  }
+}

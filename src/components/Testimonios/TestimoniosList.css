@@ -1,0 +1,37 @@
+.ContainerTestimonios{
+    display: flex;
+    /* grid-template-rows: repeat(3, 300px); */
+    overflow: hidden;
+    height: 100%;
+}
+
+/*===== Respondive =====*/
+
+/* @media screen and (max-width: 1000px) {
+    .ContainerTestimonios{
+        grid-template-rows: repeat(3, 400px);
+    }
+}
+
+@media screen and (max-width: 825px) {
+    .ContainerTestimonios{
+        grid-template-rows: repeat(3, 450px);
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .ContainerTestimonios{
+        grid-template-rows: repeat(3, 650px);
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .ContainerTestimonios{
+        grid-template-rows: repeat(3, 750px);
+    }
+}
+@media screen and (max-width: 490px) {
+    .ContainerTestimonios{
+        grid-template-rows: repeat(3, 950px);
+    }
+} */

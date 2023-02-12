@@ -1,0 +1,61 @@
+/*===== cards =====*/
+  .card-aspectos {
+    width: 90%;
+    height: 100%;
+    border-radius: 6px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.385);
+    display: flex;
+    text-align: center;
+    justify-self: center;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .card-content-aspectos {
+    position: relative;
+    height: 100%;
+    margin-top: 25px;
+  }
+  
+  .card-img-aspectos {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+  }
+  
+  .card-text-aspectos {
+    width: 85%;
+    margin: auto;
+    margin-bottom: 35px;
+  }
+
+  .card-text-aspectos p {
+    text-align: justify;
+  }
+  
+  .card-title-aspectos {
+    margin-top: 10px;
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .btn-aspectos {
+    background: var(--rojo-botones);
+    padding: 10px 50px;
+    border-radius: 5px;
+    font-weight: 900;
+  }
+
+  /*===== Responsive ======*/
+  
+  @media screen and (max-width: 1300px) {
+    .card-aspectos {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 50px;
+    }
+    .card-content-aspectos {
+      overflow: scroll;
+    }
+}
+

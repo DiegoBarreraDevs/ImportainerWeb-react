@@ -1,0 +1,43 @@
+.CardTestimonio {
+  display: grid;
+  width: 30%;
+  height: fit-content;
+  margin: auto;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.123);
+  padding: 50px 50px;
+  border-radius: 8px;
+}
+
+.CardTestimonio img {
+  margin: auto;
+  margin-bottom: 25px;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+.TitleTestimonios {
+  margin-bottom: 8px;
+}
+
+.TextTestimonio {
+  color: #000;
+  padding-left: 40px;
+}
+
+/*===== Testimonios =====*/
+
+@media screen and (max-width: 750px) {
+  .CardTestimonio {
+    display: grid;
+    align-self: center;
+  }
+  .CardTestimonio img {
+    margin: auto;
+    margin-bottom: 25px;
+  }
+  .TextTestimonio h2 {
+    margin-bottom: 10px;
+  }
+}

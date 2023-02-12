@@ -1,0 +1,117 @@
+/*===== Proyectos =====*/
+
+.proyects {
+  background: url("https://firebasestorage.googleapis.com/v0/b/base-datos-importaner.appspot.com/o/Fondos%2Ffondo-proyects.webp?alt=media&token=07b36a85-4543-45e5-9e91-88ffb5beb5d3")
+    center;
+  background-attachment: initial;
+  background-size: cover;
+  height: 100%;
+}
+
+.pr {
+  font-size: 2.3em;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.container-proy {
+  padding: 70px 0;
+  margin: auto;
+  width: 80%;
+  overflow: hidden;
+}
+
+.galeria1-proy {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card-proy1 {
+  width: 48%;
+  margin-bottom: 125px;
+}
+
+.card-proy1 img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 1%;
+  cursor: pointer;
+}
+
+.desc-proy h2 {
+  color: var(--negro-titulo);
+  font-size: 1.7rem;
+}
+
+.desc-proy p {
+  color: var(--negro-texto);
+}
+
+.galeria2-proy {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card-proy2 {
+  width: 32%;
+}
+
+.card-proy2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 1%;
+  cursor: pointer;
+}
+
+.boton {
+  margin-top: 10vw;
+  margin-bottom: 5vw;
+  text-align: center;
+}
+.btn2 {
+  padding: 10px 50px;
+  background: var(--rojo-botones);
+  font-size: 1rem;
+  border-radius: 5px;
+  color: var(--blanco-titulo);
+}
+
+/*===== Responsive =====*/
+
+@media screen and (max-width: 908px) {
+  .btn2 {
+    padding: 8px 30px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  /*===== Proyectos =====*/
+
+  .galeria1-proy {
+    display: none;
+  }
+
+  .galeria2-proy {
+    display: block;
+  }
+
+  .card-proy2 {
+    width: 78%;
+    margin: auto;
+    padding-top: 40px;
+  }
+
+  .pr {
+    margin-bottom: 15px;
+    font-size: 35px;
+  }
+
+  .desc-proy h2 {
+    font-size: 1.4rem;
+  }
+}

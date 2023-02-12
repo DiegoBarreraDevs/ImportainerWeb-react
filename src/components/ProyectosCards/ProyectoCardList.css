@@ -1,0 +1,8 @@
+.ProyCardList {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    /* overflow: hidden; */
+    margin: auto;
+    justify-content: center;
+}

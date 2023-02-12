@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+
+:root {
+  --rojo-botones: #d93737;
+  --rojo-linea: #f67f7f;
+  --negro-titulo: #3d3d3d;
+  --negro-texto: #737373;
+  --negro-fondo: #1c1b1b;
+  --blanco-fondo: #fbfbfb;
+  --blanco-titulo: #ffffff;
+  --gris-texto: #b9b9b9;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--blanco-fondo);
+  font-family: "Open Sans", sans-serif;
+}
+
+section {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/*===== Logo Importainer =====*/
+.logo-princ {
+  display: flex;
+  height: 70px;
+  width: 130px;
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  margin-top: -10px;
+}
+
+.logo {
+  height: 70%;
+  width: 70%;
+}
+
+/*===== ScrollBar =====*/
+::-webkit-scrollbar {
+  width: 8px; /* Tamaño del scroll en vertical */
+  height: 28px; /* Tamaño del scroll en horizontal */
+}
+::-webkit-scrollbar-thumb {
+  background: var(--rojo-botones);
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 800px) {
+  .logo {
+    height: 50%;
+    width: 50%;
+    margin-left: 25px;
+  }
+}

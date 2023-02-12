@@ -1,0 +1,37 @@
+/*===== Footer =====*/
+.footer {
+  margin-top: 100px;
+  height: 100%;
+  width: 100%;
+  color: var(--negro-texto);
+}
+
+.social {
+  cursor: pointer;
+  justify-content: center;
+  display: flex;
+}
+
+.icon {
+  display: flex;
+  height: 50px;
+  width: 50px;
+  margin: 7px;
+  border: 1px solid;
+  color: var(--negro-texto);
+  border-radius: 25px;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.icon:hover {
+  color: var(--rojo-botones);
+  transition: 500ms;
+}
+
+.copy {
+  margin-top: 35px;
+  margin-bottom: 50px;
+  text-align: center;
+}
